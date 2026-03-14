@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animated Gradient */
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Cloud Animation */
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
+}
+
+.cloud {
+  position: absolute;
+  width: 140px;
+  opacity: 0.5;
+  animation: moveClouds 35s linear infinite;
+}
+
+.cloud1 { top: 10%; }
+.cloud2 { top: 25%; animation-duration: 45s; }
+.cloud3 { top: 40%; animation-duration: 50s; }
+.cloud4 { top: 60%; animation-duration: 60s; }
+.cloud5 { top: 75%; animation-duration: 55s; }
+.cloud6 { top: 50%; animation-duration: 70s; }
